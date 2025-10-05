@@ -173,9 +173,8 @@ bool encoder_update_kb(uint8_t index, bool clockwise) {
 
 #ifdef QUANTUM_PAINTER_ENABLE
 
-#include "images/ZodiarkPiLogoGC.qgf.c"
-#include "images/ZodiarkPiLogo2Green.qgf.c"
-#include "images/ZodiarkPiLogoSTpink.qgf.c"
+#include "images/leftcut.qgf.c"
+#include "images/rightcut.qgf.c"
 
 static painter_device_t display;
 static painter_image_handle_t image;
@@ -210,11 +209,11 @@ uint32_t deferred_init(uint32_t trigger_time, void *cb_arg) {
             qp_init(display, QP_ROTATION_0);
         }
     if (is_keyboard_left()) {
-        image = qp_load_image_mem(gfx_ZodiarkPiLogoSTpink);
+        image = qp_load_image_mem(gfx_leftcut);
     }
 // If using pointing device on right side, comment out following 3 lines
     else {
-       image = qp_load_image_mem(gfx_ZodiarkPiLogoSTpink);
+       image = qp_load_image_mem(gfx_rightcut);
     }
     // ##end st7789 screen support
 
