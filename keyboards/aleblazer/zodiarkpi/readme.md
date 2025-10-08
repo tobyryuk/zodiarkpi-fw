@@ -1,5 +1,7 @@
 # ZodiarkPi
 
+Fork specifically for my own personal preferences and changes.
+
 ![ZodiarkPi](https://i.imgur.com/iOvyZLMh.jpeg)
 
 WIP (Ignore the picture of the ZodZero)
