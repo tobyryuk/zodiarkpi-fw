@@ -96,3 +96,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define ENABLE_RGB_MATRIX_SOLID_SPLASH
 #define ENABLE_RGB_MATRIX_SOLID_MULTISPLASH
 #endif
+
+// Screen support
+#define ST7789_NUM_DEVICES 2
+#define QUANTUM_PAINTER_DISPLAY_TIMEOUT 0
+#define LCD_RST_PIN GP27
+#define LCD_DC_PIN GP28
+#define LCD_CS_PIN GP11
+#define LCD_SPI_DIVISOR 8
+#define QUANTUM_PAINTER_DEBUG
+#define QUANTUM_PAINTER_SUPPORTS_NATIVE_COLORS true

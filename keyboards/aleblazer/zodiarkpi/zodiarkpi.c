@@ -200,9 +200,9 @@ uint32_t deferred_init(uint32_t trigger_time, void *cb_arg) {
     }
 
     if (is_keyboard_left()) {
-        qp_init(display, QP_ROTATION_180);
+        qp_init(display, QP_ROTATION_270);
     } else {
-        qp_init(display, QP_ROTATION_0);
+        qp_init(display, QP_ROTATION_90);
     }
 
     if (is_keyboard_left()) {
